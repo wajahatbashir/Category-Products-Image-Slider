@@ -14,6 +14,13 @@
 
 ---
 
+## Screenshots
+
+### Frontend View
+![Frontend View](https://github.com/wajahatbashir/wajahatbashir/blob/main/images/image-slider-frontend.jpg)
+
+---
+
 ## **Installation**  
 
 1️⃣ **Copy module files** to:  
