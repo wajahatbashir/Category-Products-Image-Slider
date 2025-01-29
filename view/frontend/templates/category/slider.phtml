@@ -1,0 +1,19 @@
+<?php
+$productImages = $block->getProductImages();
+if (!$productImages || count($productImages) === 0): ?>
+    <p>No images found for this product.</p>
+<?php else: ?>
+    <div class="product-slider" data-product-id="<?= $block->getProduct()->getId(); ?>">
+        <div class="slides-container">
+            <?php foreach ($productImages as $index => $image): ?>
+                <div class="slide" data-index="<?= $index ?>" style="display: <?= $index === 0 ? 'block' : 'none'; ?>;">
+                    <img src="<?= $image ?>" alt="Product Image <?= $index + 1 ?>">
+                </div>
+            <?php endforeach; ?>
+        </div>
+        <?php if (count($productImages) > 1): ?>
+            <button class="prev">‹</button>
+            <button class="next">›</button>
+        <?php endif; ?>
+    </div>
+<?php endif; ?>

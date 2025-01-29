@@ -1,0 +1,18 @@
+{
+    "name": "wb/product-image-slider",
+    "description": "Custom Magento 2 module for product image slider on category pages",
+    "require": {
+        "php": "~7.4.0||~8.0.0",
+        "magento/framework": "*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "WB\\ProductImageSlider\\": ""
+        }
+    }
+}

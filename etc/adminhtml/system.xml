@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config/etc/system_file.xsd">
+    <system>
+        <tab id="wajahatbashir" translate="label" sortOrder="100">
+            <label>💻 WB</label>
+        </tab>
+        <section id="wb_productimageslider" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Product Image Slider</label>
+            <tab>wajahatbashir</tab>
+            <resource>WB_ProductImageSlider::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Slider</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="example_code" translate="label" type="note" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Example Usage in list.phtml</label>
+                    <frontend_model>WB\ProductImageSlider\Block\Adminhtml\System\Config\ExampleCode</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

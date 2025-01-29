@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="WB_ProductImageSlider::css/slider.css"/>
+        <script src="WB_ProductImageSlider::js/slider.js"/>
+    </head>
+    <body>
+        <!-- This block can be placed in any container, e.g. content or after.body.start -->
+        <referenceContainer name="content">
+            <block class="WB\ProductImageSlider\Block\Config" name="wb_productimageslider_config"/>
+        </referenceContainer>
+    </body>
+</page>
